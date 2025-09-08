@@ -16,7 +16,7 @@ import styles from "./Header.module.css";
       alt="George Smerin"
     />
   </h1>
-  <button class={styles.contact}>
+  <button id="contact" class={styles.contact}>
     <Image
       src={contactIcon}
       class={styles.contactIcon}
@@ -26,3 +26,10 @@ import styles from "./Header.module.css";
     />
   </button>
 </div>
+
+<script>
+  const button = document.getElementById("contact");
+  button?.addEventListener("click", () => {
+    window.location.href = "mailto:gsmerin@gmail.com";
+  });
+</script>

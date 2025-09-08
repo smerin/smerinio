@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  z-index: 2;
+  z-index: 999;
   padding: 8rem 2rem 2rem;
   background: var(--teal);
   color: var(--white);
