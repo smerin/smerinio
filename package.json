@@ -9,6 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.2.6",
+    "@fontsource/red-hat-display": "^5.2.6",
     "astro": "^5.13.5"
   }
 }

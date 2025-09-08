@@ -1,0 +1,66 @@
+:root {
+  --teal: #049baf;
+  --yellow: #ffe100;
+  --yellow-hover: #e6cb00;
+  --white: #ffffff;
+  --charcoal: #333333;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--white);
+  color: var(--charcoal);
+  font-family: "DM Sans Variable", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 6rem;
+  text-transform: uppercase;
+}

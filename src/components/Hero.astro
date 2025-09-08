@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import pinIcon from "../assets/icon-pin.svg";
+import background from "../assets/hero-background.png";
+import foreground from "../assets/hero-foreground.png";
+import styles from "./Hero.module.css";
+---
+
+<div class={styles.hero}>
+  <Image
+    src={background}
+    class={styles.imageBackground}
+    layout="full-width"
+    alt=""
+  />
+  <Image
+    src={foreground}
+    class={styles.imageForeground}
+    layout="full-width"
+    alt=""
+  />
+  <div class={styles.card}>
+    <h2>Freelance <br />Frontend Developer</h2>
+    <span class={styles.divider}></span>
+    <p><Image src={pinIcon} width={18} height={30} alt="" />Bristol, UK</p>
+  </div>
+</div>

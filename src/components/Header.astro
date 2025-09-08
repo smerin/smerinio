@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import smerinLogo from "../assets/smerin.svg";
+import contactIcon from "../assets/icon-contact.svg";
+
+import styles from "./Header.module.css";
+---
+
+<div class={styles.header}>
+  <h1>
+    <Image
+      class={styles.logo}
+      src={smerinLogo}
+      width="123"
+      height="56"
+      alt="George Smerin"
+    />
+  </h1>
+  <button class={styles.contact}>
+    <Image
+      src={contactIcon}
+      class={styles.contactIcon}
+      width={32}
+      height={22}
+      alt=""
+    />
+  </button>
+</div>
