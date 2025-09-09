@@ -1,11 +1,15 @@
 ---
+import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Hero from "../components/Hero.astro";
-import Layout from "../layouts/Layout.astro";
+import Intro from "../components/Intro.astro";
 import "../styles/global.css";
 ---
 
 <Layout>
   <Header />
   <Hero />
+  <main>
+    <Intro />
+  </main>
 </Layout>
