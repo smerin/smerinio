@@ -1,0 +1,33 @@
+---
+import styles from "./Work.module.css";
+
+const work = [
+  {
+    name: "Royal Navy",
+  },
+  {
+    name: "The British Army",
+  },
+  {
+    name: "Natwest",
+  },
+  {
+    name: "Accenture",
+  },
+  {
+    name: "Wessex Water",
+  },
+  {
+    name: "Harry Potter Shop",
+  },
+];
+---
+
+<div class={styles.work}>
+  <div class={styles.container}>
+    <h2 class="eyebrow">Recent work</h2>
+    <ul class={styles.list}>
+      {work.map(({ name }) => <li>{name}</li>)}
+    </ul>
+  </div>
+</div>

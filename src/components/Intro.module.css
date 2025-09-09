@@ -1,8 +1,8 @@
 .intro {
-  padding: 4rem 0;
+  padding: 4rem 0 0;
 
   @media (min-width: 800px) {
-    padding: 8rem 0 6rem;
+    padding-top: 8rem;
   }
 }
 
