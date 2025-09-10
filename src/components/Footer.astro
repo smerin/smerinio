@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import smerinLogo from "../assets/smerin.svg";
+import contactIcon from "../assets/icon-contact.svg";
+import pinIcon from "../assets/icon-pin.svg";
+import styles from "./Footer.module.css";
+---
+
+<footer class={styles.footer}>
+  <div class={styles.logoWrapper}>
+    <Image
+      class={styles.logo}
+      src={smerinLogo}
+      width="123"
+      height="56"
+      alt="George Smerin"
+    />
+  </div>
+  <div class={styles.contactBar}>
+    <span class={styles.divider}></span>
+    <p class={styles.invitation}>Let’s work together</p>
+    <button id="contact" class={styles.contact}>
+      <Image
+        src={contactIcon}
+        class={styles.contactIcon}
+        width={24}
+        height={17}
+        alt=""
+      />
+    </button>
+  </div>
+  <div class={styles.bottom}>
+    <ul>
+      <li><a href="mailto:gsmerin@gmail.com">gsmerin@gmail.com</a></li>
+      <li><a href="tel:+447887868522">+44 (0) 7887 868 522</a></li>
+    </ul>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/smerin/">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/smerin">Instagram</a></li>
+    </ul>
+    <p class={styles.location}>
+      <Image src={pinIcon} width={18} height={30} alt="" />Bristol, UK
+    </p>
+    <p class={styles.company}>
+      Smerin Digital Limited<br />
+      Company: 14418930<br />
+      VAT: 443342220
+    </p>
+  </div>
+</footer>
